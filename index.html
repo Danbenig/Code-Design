@@ -181,6 +181,18 @@ h1,h2,h3,h4,h5,h6{font-weight:400;}
 .navbar_projects-link:has(.w--current) {
   color:var(--_theme-colors---text--primary);
 }
+/* Hero Image Animation */
+.hero-bg-image {
+  filter: blur(10px);
+  transform: scale(1.2);
+  animation: heroAppear 1.5s ease-out forwards;
+}
+@keyframes heroAppear {
+  to {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
 /* Project Marquee Animation*/
 .projects_marquee-list {
   animation: marquee 40s linear infinite;
@@ -264,10 +276,10 @@ h1,h2,h3,h4,h5,h6{font-weight:400;}
                     </svg></div>
                 </div>
                 <div class="hero-top-left text-ms">
-                  <div>Branding /<br>Deisng / UI/UX /<br>Strategy /</div>
+                  <div data-load-text="">Branding /<br>Deisng / UI/UX /<br>Strategy /</div>
                 </div>
                 <div id="w-node-fa576322-b214-6cbd-6e77-c93c2af65eba-b9c3d9c4" class="hero-top-right">
-                  <div class="hero-top-right text-ms">Toda empresa precisa<br>gerar impacto<br>e estar disposta a evoluir.</div>
+                  <div data-load-text="" class="hero-top-right text-ms">Toda empresa precisa<br>gerar impacto<br>e estar disposta a evoluir.</div>
                 </div>
               </div>
               <div class="hero-bottom">
@@ -284,9 +296,9 @@ h1,h2,h3,h4,h5,h6{font-weight:400;}
                     </svg></div>
                 </div>
                 <div class="hero-heading-wrap">
-                  <div class="body-text-1 cc-1">Hoje a sua</div>
-                  <div class="display-01 hero-title laptop">Marca</div>
-                  <div class="hero-heading-small body-text-1">Começa aqui</div>
+                  <div data-load-text="" class="body-text-1 cc-1">Hoje a sua</div>
+                  <div data-load-text="" class="display-01 hero-title laptop">Marca</div>
+                  <div data-load-text="" class="hero-heading-small body-text-1">Começa aqui</div>
                 </div>
               </div>
             </div>
