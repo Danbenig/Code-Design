@@ -1922,8 +1922,8 @@ figcaption {
 }
 
 .home-project_list {
-  grid-column-gap: var(--spacers--5xl-minus);
-  grid-row-gap: var(--spacers--5xl-minus);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
@@ -2668,7 +2668,7 @@ figcaption {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   flex-flow: column;
-  width: 100%;
+  width: 90%;
   margin-top: 4.5rem;
   display: flex;
 }
@@ -2753,6 +2753,8 @@ figcaption {
 }
 
 .hero-wrapper {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   flex-flow: column;
   align-items: center;
   margin-top: 15vh;
@@ -4059,6 +4061,10 @@ figcaption {
     position: static;
   }
 
+  .pricing-grid-wrapper {
+    width: 100%;
+  }
+
   .enterprise-banner {
     width: 85rem;
   }
@@ -4623,6 +4629,10 @@ figcaption {
     padding-bottom: var(--spacers--7xl);
   }
 
+  .home-project_list {
+    display: block;
+  }
+
   .service_item {
     padding-right: var(--spacers--md-regular);
     padding-left: var(--spacers--md-regular);
@@ -4723,6 +4733,11 @@ figcaption {
     font-size: 1.4rem;
   }
 
+  .pricing-grid-wrapper {
+    flex-flow: column;
+    width: 90%;
+  }
+
   .pricing-grid {
     grid-template-columns: 1fr;
   }
@@ -4742,6 +4757,20 @@ figcaption {
   .enterprise-content {
     grid-row-gap: 1rem;
     flex-direction: column;
+  }
+
+  .hero-component {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-wrapper {
+    box-sizing: border-box;
+    aspect-ratio: auto;
+    object-fit: fill;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
   }
 
   .enterprise-banner {
@@ -5157,6 +5186,13 @@ figcaption {
     display: none;
   }
 
+  .heading-style-h1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .styleguide_section-header {
     font-size: .875rem;
   }
@@ -5476,6 +5512,10 @@ figcaption {
     font-size: 1.3rem;
   }
 
+  .pricing-grid-wrapper {
+    width: 95%;
+  }
+
   .heading-2 {
     font-size: 4rem;
   }
@@ -5490,6 +5530,10 @@ figcaption {
 
   .text-size-medium {
     font-size: 1.2rem;
+  }
+
+  .enterprise-banner {
+    margin-top: 0;
   }
 
   .price-card {
@@ -5797,6 +5841,12 @@ figcaption {
     max-width: none;
   }
 
+  .heading-style-h1 {
+    font-size: var(--_typography---font-size--h2);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .hide-mobile-portrait {
     display: none;
   }
@@ -5972,9 +6022,13 @@ figcaption {
     grid-row-gap: .75rem;
     border-radius: 1rem;
     flex-flow: row;
-    width: auto;
+    width: 85%;
     padding-top: .75rem;
     padding-bottom: .75rem;
+  }
+
+  .pricing-grid-wrapper {
+    width: 90%;
   }
 
   .heading-2 {
