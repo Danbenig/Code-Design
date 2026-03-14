@@ -204,6 +204,20 @@ h1,h2,h3,h4,h5,h6{font-weight:400;}
   .menu_button-mobile.w--open .menu_button-icon{display:none;}
   .menu_button-mobile.w--open .menu_button-icon.is-close{display:block;}
 }
+/* Hero background image zoom in and blur animation */
+@keyframes heroZoomBlur {
+  0% {
+    transform: scale(1.2);
+    filter: blur(10px);
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+.hero-bg-image {
+  animation: heroZoomBlur 2s ease-out;
+}
 </style>
     </div>
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="nav w-nav">
@@ -264,10 +278,10 @@ h1,h2,h3,h4,h5,h6{font-weight:400;}
                     </svg></div>
                 </div>
                 <div class="hero-top-left text-ms">
-                  <div>Branding /<br>Deisng / UI/UX /<br>Strategy /</div>
+                  <div data-load-text="">Branding /<br>Deisng / UI/UX /<br>Strategy /</div>
                 </div>
                 <div id="w-node-fa576322-b214-6cbd-6e77-c93c2af65eba-b9c3d9c4" class="hero-top-right">
-                  <div class="hero-top-right text-ms">Toda empresa precisa<br>gerar impacto<br>e estar disposta a evoluir.</div>
+                  <div class="hero-top-right text-ms" data-load-text="">Toda empresa precisa<br>gerar impacto<br>e estar disposta a evoluir.</div>
                 </div>
               </div>
               <div class="hero-bottom">
@@ -284,9 +298,9 @@ h1,h2,h3,h4,h5,h6{font-weight:400;}
                     </svg></div>
                 </div>
                 <div class="hero-heading-wrap">
-                  <div class="body-text-1 cc-1">Hoje a sua</div>
-                  <div class="display-01 hero-title laptop">Marca</div>
-                  <div class="hero-heading-small body-text-1">Começa aqui</div>
+                  <div class="body-text-1 cc-1" data-load-text="">Hoje a sua</div>
+                  <div class="display-01 hero-title laptop" data-load-text="">Marca</div>
+                  <div class="hero-heading-small body-text-1" data-load-text="">Começa aqui</div>
                 </div>
               </div>
             </div>
